@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    margin: 2.5vh auto;
+}
+body{
+    background: rgb(216, 216, 216);
+    width: 100%;
+    min-height: 100vh;
+}
+nav{
+    background: #fff;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    box-shadow: 4px 4px 4px rgba(43, 43, 43, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+iframe{
+    width: 100%;
+    display: none;
+    height: 0;
+}
+#movediv{
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#close{
+    padding: .15vh 1vh;
+    border-radius: 500px;
+    display: none;
+    background: #000;
+    color: #fff;
+    margin-left: auto;
+    cursor: pointer;
+}
+#click{
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    transition: all .5s;
+}
+#click:hover{
+    background: rgb(214, 214, 214);
+}
+#click a{
+    text-decoration: none;
+    color: #000;
+    margin: auto 2.5vh;
+}
+.content_links{
+    margin: auto;
+    width: 100%;
+}
+.div_iframe1,.div_iframe2 ,.div_iframe3 ,.div_iframe4 {
+    padding: 1vh 0;
+    width: 100%;
+    height: 50px;
+}
+.open_iframe{
+    display: block;
+    height: 650px;
+    animation: test .5s;
+}
+.cliquee{
+    width: 90%;
+    height: 20px;
+    background: rgb(214, 214, 214);
+    border-radius: 5px 5px 0 0;
+    color: white !;
+    padding: .5vh 5%;
+    text-decoration: none !important;
+}
+@keyframes test {
+    from{
+        height: 0px;
+    }
+}
